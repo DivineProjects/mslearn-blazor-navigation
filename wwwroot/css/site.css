@@ -2,13 +2,23 @@
 
 body, html {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 body {
-    padding-top: 5rem;
-    flex-direction: column;
+    /* padding-top: 5rem;
+    display: flex;
+    flex-direction: column; */
     font-family: 'quicksand';
     overflow-y: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 form {
@@ -52,10 +62,13 @@ form {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     overflow-y: auto;
     background: linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 80%);
     padding: 1.5rem !important;
+    
 }
 
 .nav-tab {
@@ -105,6 +118,14 @@ form {
         border-right: 0.6rem solid transparent;
         border-top: 1rem solid rgb(205,51,51);
     }
+
+.footer {
+    /* background-color: #333; */
+    /* color: white; */
+    text-align: center;
+    padding: 1rem;
+    
+}
 
 .user-info {
     margin-left: auto;
@@ -210,6 +231,7 @@ form {
     width: 20rem;
     display: flex;
     flex-direction: column;
+    
     color: white;
 }
 
